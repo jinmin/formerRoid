@@ -34,11 +34,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter
 		Log.d("position == > ", String.valueOf(position));
 		switch (position) {
 			case 0:
-				// if (fragmentArr[position] == null) {
-				// fragmentArr[position] = ListPageFragment.newInstance(_context);
-				// }
-				// f = fragmentArr[position];
-				f = ListPageFragment.newInstance(_context);
+				if (fragmentArr[position] == null) {
+					fragmentArr[position] = ListPageFragment.newInstance(_context);
+				}
+				f = fragmentArr[position];
+				// f = ListPageFragment.newInstance(_context);
 				// f = ListPageFragment.instantiate(_context, ListPageFragment.class.getName());
 				break;
 			case 1:

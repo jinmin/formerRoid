@@ -49,9 +49,10 @@ public class FormerRoidActivity extends FragmentActivity implements ActionBar.Ta
 				currentPosition = position;
 				actionBar.setSelectedNavigationItem(position);
 			}
+
 		});
 
-		// set tab name from viewPagerAdapter
+		// set new tab name from viewPagerAdapter
 		for (int i = 0; i < viewPagerAdapter.getCount(); i++) {
 			actionBar.addTab(actionBar.newTab().setText(viewPagerAdapter.getPageTitle(i)).setTabListener(this));
 		}
